@@ -3,15 +3,20 @@ simple bash script thats deletes zfs snapshots older than a custom amount of day
 
 this script was written to purge snapshots with the date schema "2022-09-20" (%Y-%m-%d) after X days
 
-
 ## config
 edit following vars at the start of the script
 
-timespan=60
+### timespan
+`timespan=60`
 timespan in days to keep snapshots
 
-dataset="pool/dataset"
+### dataset
+`dataset="pool/dataset"`
 dataset that will be processed recursively
 
-snapshotname="autosnap_.*_daily"
+### snapshotname
+`snapshotname="autosnap_.*_daily"`
 regex of the snapshot name that should be processed
+
+### dry-run
+the final `zfs destroy` command at the end of the script is commented out to just give you a 'dry run' output. just uncomment if you are happy with the output.
