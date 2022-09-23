@@ -18,5 +18,5 @@ dataset that will be processed recursively
 `snapshotname="autosnap_.*_daily"`
 regex of the snapshot name that should be processed
 
-### dry-run
+## dry-run default
 the final `zfs destroy` command at the end of the script is commented out to just give you a 'dry run' output. just uncomment if you are happy with the output.
