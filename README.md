@@ -1,7 +1,7 @@
 # snappurge
 simple bash script thats deletes zfs snapshots older than a custom amount of days.
 
-this script was written to purge snapshots with the date schema "2022-09-20" (%Y-%m-%d) after X days
+this script was written to purge snapshots with the date schema "2022-09-20" (%Y-%m-%d) older than X days
 
 ## config
 edit following vars at the start of the script
